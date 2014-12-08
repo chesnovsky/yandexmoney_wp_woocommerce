@@ -105,7 +105,7 @@ function woocommerce_YM_payu_init(){
 			$result .= '<input type="hidden" name="ShopID" value="'.get_option('ym_ShopID').'"> ';
 			$result .= '<input type=hidden name="CustomerNumber" value="'.$txnid.'" size="43">';
 			$result .= '<input type=hidden name="Sum" value="'.$order->order_total.'" size="43">'; 
-			$result .= '<input type=hidden name="cps_email" value="'.$order->billing_email.'" size="43">'; 
+			$result .= '<input type=hidden name="cps_email" value="'.$order->billing_email.'">'; 
 			$result .= '<textarea style="display:none" rows="10" name="OrderDetails"  cols="34">'.$order->customer_note.'</textarea>';
 			$result .= '<input name="paymentType" value="" type="hidden">';
 			$result .= '<input type=submit value="Оплатить">';
